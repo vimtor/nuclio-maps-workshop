@@ -1,13 +1,41 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-y: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+    text-align: center;
+}
+
+.success {
+    background-color: mediumseagreen;
+}
+
+.geography {
+    stroke: white;
+    stroke-width: 0.5px;
+    cursor: pointer;
+    outline: none;
+    transition: all 250ms ease-in-out;
+}
+
+.geography.unvisited {
+    fill: lightgray;
+}
+
+.geography.unvisited:hover {
+    fill: darkgray;
+}
+
+.geography.visited {
+    fill: deepskyblue;
+}
+
+.geography.visited:hover {
+    fill: dodgerblue;
 }
